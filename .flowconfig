@@ -1,0 +1,13 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+pages/**/*.jsx
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
