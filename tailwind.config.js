@@ -1,7 +1,10 @@
 const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
-  purge: ["./pages/**/*.jsx"],
+  purge: [
+    "./pages/**/*.jsx",
+    "./components/**/*.jsx",
+  ],
   theme: {
     extend: {
       colors: { blue: { "400": "red" } },
