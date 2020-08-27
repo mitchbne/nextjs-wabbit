@@ -1,10 +1,12 @@
-<p align="center">
-  <img src="https://i.ibb.co/GtnKZGp/wabbit.jpg" alt="Wabbit Image">
-</p>
-<h1 align="center">Welcome to NextJS Wabbit!</h1>
-<br />
-NextJS Wabbit is an extension to the NextJS template with TailwindCSS and ESLint built in and <b>ready-to-go</b> for any project.
+<h2 align="center">
+  NextJS Wabbit
+</h2>
 
+<p align="center">
+  A template starter repository using NextJS, TailwindCSS, Typescript and ESlint.
+</p>
+
+---
 ### Getting Started
 
 Getting started is as simple as 
