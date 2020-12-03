@@ -7,8 +7,6 @@ import "css/tailwind.css"
 export default class BaseComponent extends App {
   render() {
     const { Component, pageProps } = this.props
-    return (
-      <Component {...pageProps} />
-    )
+    return <Component {...pageProps} />
   }
 }

@@ -7,6 +7,13 @@
     "settings": {
       "react": { "version": "detect" },
       "import/resolver": {
+        "alias": {
+          "map": [
+            ["css", "./css"],
+            ["components", "./components"],
+            ["pages", "./pages"]
+          ]
+        },
         "node": {
           "extensions": [".js",".jsx", ".ts",".tsx", ".jpeg", ".png"]
         }

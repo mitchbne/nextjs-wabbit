@@ -6,7 +6,7 @@ module.exports = {
     mode: "all",
     content: [
       "./components/**/*.{js,ts,jsx,tsx}",
-      "./pages/**/*.{js,ts,jsx,tsx}"
+      "./pages/**/*.{js,ts,jsx,tsx}",
     ],
   },
   darkMode: "media",
@@ -19,9 +19,7 @@ module.exports = {
       container: { center: true },
     },
   },
-  variants: {
-    extend: {}
-  },
+  variants: { extend: {} },
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
