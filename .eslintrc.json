@@ -5,6 +5,7 @@
         "node": true
     },
     "settings": {
+      "react": { "version": "detect" },
       "import/resolver": {
         "node": {
           "extensions": [".js",".jsx", ".ts",".tsx", ".jpeg", ".png"]
@@ -19,11 +20,9 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
+        "ecmaFeatures": { "jsx": true },
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
@@ -31,9 +30,9 @@
       "react",
       "react-hooks",
       "underscore-to-lodash",
-      "compat",
       "import",
-      "eslint-comments"
+      "eslint-comments",
+      "@typescript-eslint"
     ],
     "rules": {
       "underscore-to-lodash/prefer-import-lodash": "error",
@@ -45,7 +44,6 @@
       "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
       "no-var": 2,
       "no-undef": 2,
-      "compat/compat": "error",
       "comma-dangle": ["error", {
           "arrays": "always-multiline",
           "objects": "always-multiline",
@@ -73,7 +71,7 @@
     "semi": ["error", "never"],
     "no-bitwise": 2,
     "no-implicit-coercion": ["error", { "boolean": false, "number": false, "string": true }],
-    "import/no-unresolved": 2,
+    "import/no-unresolved": 1,
     "import/named": 2,
     "import/default": 2,
     "import/namespace": 2,
@@ -132,6 +130,8 @@
     "quote-props": [2, "as-needed", { "numbers": true }],
     "no-useless-computed-key": 2,
     "no-unexpected-multiline": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
     "react/no-typos": 2,
     "react/jsx-no-target-blank": 2,
     "no-unused-expressions": 0,

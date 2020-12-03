@@ -17,9 +17,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "context/*": ["context/*"],
+      "utils/*": ["utils/*"],
+      "components/*": ["components/*"],
+      "css/*": ["css/*"]
+    },
   },
   "include": [
+    "utils",
     "pages",
     "components"
   ],
