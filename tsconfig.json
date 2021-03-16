@@ -20,19 +20,12 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "context/*": ["context/*"],
-      "utils/*": ["utils/*"],
-      "components/*": ["components/*"],
-      "css/*": ["css/*"]
+      "context/*": ["src/context/*"],
+      "utils/*": ["src/utils/*"],
+      "components/*": ["src/components/*"],
+      "css/*": ["src/css/*"]
     },
   },
-  "include": [
-    "utils",
-    "pages",
-    "css",
-    "components"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
