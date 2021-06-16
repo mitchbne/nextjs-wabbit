@@ -1,12 +1,27 @@
-// @flow
-import React from "react"
-import App from "next/app"
+import { Fragment } from "react"
+import { AppProps } from "next/app"
+import Head from "next/head"
 import "css/tailwind.css"
 
-// This default export is required in a new `pages/_app.js` file.
-export default class BaseComponent extends App {
-  render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
-  }
+const PageLayouts = {}
+
+function LayoutWrapper(props: AppProps["pageProps"]) {
+  const layout = props.children.type.layout
+  // @ts-ignore
+  const Layout = PageLayouts[layout as string] || Fragment
+  const pageProps = typeof Layout === "symbol" ? {} : props
+  return <Layout {...pageProps}>{props.children}</Layout>
+}
+
+export default function MyApp({ pageProps, Component }: AppProps) {
+  return (
+    <>
+      <Head>
+        <link href="/favicon.ico" rel="icon" />
+      </Head>
+      <LayoutWrapper {...pageProps}>
+        <Component {...pageProps} />
+      </LayoutWrapper>
+    </>
+  )
 }

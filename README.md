@@ -7,15 +7,11 @@
 </p>
 
 ---
+
 ### Getting Started
 
-Getting started is as simple as 
+Getting started is as simple as
+
 ```bash
-  git clone git@github.com:mitchbne/nextjs-wabbit.git
-
-  rm -rf .git && git init .
-
-  yarn install
-
-  yarn start
+  create-next-app -e https://github.com/mitchbne/nextjs-wabbit
 ```

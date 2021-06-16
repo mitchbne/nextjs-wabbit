@@ -6,10 +6,10 @@ jobs:
     steps:
       - name: Begin CI...
         uses: actions/checkout@v2
-      - name: Use Node 14
+      - name: Use Node 15
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+          node-version: 15.x
       - name: Use cached node_modules
         uses: actions/cache@v1
         with:
@@ -29,24 +29,7 @@ jobs:
         run: yarn lint
         env:
           CI: true
-      # - name: Test
-      #   run: yarn test --ci --coverage --maxWorkers=2
-      #   env:
-      #     CI: true
-  lhci:
-    name: Lighthouse
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
-      - name: npm install, build
-        run: |
-          npm install
-          npm run build
-      - name: run Lighthouse CI
-        run: |
-          npm install -g @lhci/cli@0.4.x
-          lhci autorun
+      - name: Test
+        run: yarn test --ci --coverage --passWithNoTests --maxWorkers=2
+        env:
+          CI: true

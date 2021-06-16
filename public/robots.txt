@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://nextjs-wabbit.vercel.app/sitemap.xml
