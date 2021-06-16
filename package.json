@@ -23,7 +23,6 @@
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/jit": "^0.1.1",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/classnames": "^2.2.11",
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.11",
