@@ -98,6 +98,8 @@ export default function Home() {
                     <a
                       className="text-cyan-600 hover:text-cyan-700"
                       href="https://tailwindcss.com/docs"
+                      rel="noreferrer"
+                      target="_blank"
                     >
                       {" "}
                       Read the docs &rarr;{" "}

@@ -1,6 +1,5 @@
 const siteUrl = "https://nextjs-wabbit.vercel.app/"
 module.exports = {
-  experimental: { turboMode: true, eslint: true },
   images: { domains: ["play.tailwindcss.com"] },
   future: { strictPostcssConfiguration: true },
   async headers() {

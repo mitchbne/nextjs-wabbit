@@ -4,7 +4,6 @@
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./src",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -26,14 +25,14 @@
     "module": "esnext",
     "jsxFactory": "React.createElement",
     "paths": {
-      "context/*": ["src/context/*"],
-      "layouts/*": ["src/layouts/*"],
-      "utils/*": ["src/utils/*"],
-      "lib/*": ["src/lib/*"],
-      "components/*": ["src/components/*"],
-      "css/*": ["src/css/*"]
+      // "~/context/*": ["context/*"],
+      // "~/layouts/*": ["layouts/*"],
+      // "~/utils/*": ["utils/*"],
+      // "~/lib/*": ["lib/*"],
+      // "~/components/*": ["components/*"],
+      "~/css/*": ["css/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "pages"],
   "exclude": ["node_modules"]
 }

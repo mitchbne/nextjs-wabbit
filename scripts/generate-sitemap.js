@@ -6,11 +6,10 @@ const prettier = require("prettier")
 module.exports = async function (url) {
   const prettierConfig = await prettier.resolveConfig("./.prettierrc.js")
   const pages = await globby([
-    "src/pages/**/*.{js,ts,jsx,tsx}",
-    "!src/pages/_*.{js,ts,jsx,tsx}",
-    "!src/pages/dashboard",
-    "!src/pages/api",
-    "!src/pages/404.js",
+    "pages/**/*.{js,ts,jsx,tsx}",
+    "!pages/_*.{js,ts,jsx,tsx}",
+    "!pages/api",
+    "!pages/404.js",
   ])
 
   const sitemap = `
@@ -24,7 +23,7 @@ module.exports = async function (url) {
               )
               .map((page) => {
                 const route = page
-                  .replace("src/pages", "")
+                  .replace("pages", "")
                   .replace(".jsx", "")
                   .replace(".tsx", "")
                   .replace(".js", "")

@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import { AppProps } from "next/app"
 import Head from "next/head"
-import "css/tailwind.css"
+import "~/css/tailwind.css"
 
 const PageLayouts = {}
 
