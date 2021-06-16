@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --passWithNoTests",
-    "lint": "eslint --cache src/ --ext .js,.jsx,.ts,.tsx --fix",
+    "lint": "eslint --cache . --ext .js,.jsx,.ts,.tsx --fix",
     "prepare": "husky install"
   },
   "dependencies": {
