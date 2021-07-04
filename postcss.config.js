@@ -1,3 +1,3 @@
 module.exports = {
-  plugins: ["@tailwindcss/jit", ["cssnano", { preset: "default" }], "autoprefixer"],
+  plugins: ["tailwindcss", ["cssnano", { preset: "default" }], "autoprefixer"],
 }
