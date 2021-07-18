@@ -8,7 +8,7 @@
     "start": "next start",
     "test": "jest --passWithNoTests",
     "lint": "eslint --cache . --ext .js,.jsx,.ts,.tsx --fix",
-    "prepare": "husky install"
+    "postinstall": "husky install"
   },
   "prettier": "@mitchbne/prettier",
   "dependencies": {
