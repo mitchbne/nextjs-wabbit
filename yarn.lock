@@ -616,10 +616,10 @@
     eslint-plugin-react-hooks "^4.2.0"
     eslint-plugin-underscore-to-lodash "^0.0.2"
 
-"@mitchbne/prettier@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@mitchbne/prettier/-/prettier-1.0.0.tgz#312b78fd2615e71b943308e627b961bfaf899f8e"
-  integrity sha512-tRHbmDoDUv1+P4BC6q17rf4htlPtf6BLNFoMjyvLLFP9CqDi0v82TtpZpcFyEq1DpxyjXqvv39sHBZrv3NfHag==
+"@mitchbne/prettier@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@mitchbne/prettier/-/prettier-1.0.3.tgz#f5ecfcf5c37eea2c21fd3017eae98df93ee18e11"
+  integrity sha512-kfv72lXTpKcXOswbB0+/Nev0+gSDpiwsZylDk5kKKe/4Nkf4ZKBwN4BLFhaqZHoJeH5vNcc8L3xxzdy9jmbsBQ==
 
 "@napi-rs/triples@^1.0.3":
   version "1.0.3"
