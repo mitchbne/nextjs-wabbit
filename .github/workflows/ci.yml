@@ -6,10 +6,10 @@ jobs:
     steps:
       - name: Begin CI...
         uses: actions/checkout@v2
-      - name: Use Node 15
+      - name: Use Node 14
         uses: actions/setup-node@v1
         with:
-          node-version: 15.x
+          node-version: 14.x
       - name: Use cached node_modules
         uses: actions/cache@v1
         with:
@@ -30,10 +30,10 @@ jobs:
     steps:
       - name: Begin CI...
         uses: actions/checkout@v2
-      - name: Use Node 15
+      - name: Use Node 14
         uses: actions/setup-node@v1
         with:
-          node-version: 15.x
+          node-version: 14.x
       - name: Use cached node_modules
         uses: actions/cache@v1
         with:
@@ -54,10 +54,10 @@ jobs:
     steps:
       - name: Begin CI...
         uses: actions/checkout@v2
-      - name: Use Node 15
+      - name: Use Node 14
         uses: actions/setup-node@v1
         with:
-          node-version: 15.x
+          node-version: 14.x
       - name: Use cached node_modules
         uses: actions/cache@v1
         with:
