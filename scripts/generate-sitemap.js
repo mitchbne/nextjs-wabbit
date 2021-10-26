@@ -5,12 +5,7 @@ const prettier = require("prettier")
 
 module.exports = async function (url) {
   const prettierConfig = await prettier.resolveConfig("./.prettierrc.js")
-  const pages = await globby([
-    "pages/**/*.{js,ts,jsx,tsx}",
-    "!pages/_*.{js,ts,jsx,tsx}",
-    "!pages/api",
-    "!pages/404.js",
-  ])
+  const pages = await globby(["pages/**/*.{js,ts,jsx,tsx}", "!pages/_*.{js,ts,jsx,tsx}", "!pages/api", "!pages/404.js"])
 
   const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>

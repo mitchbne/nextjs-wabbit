@@ -1,7 +1,13 @@
 const siteUrl = "https://nextjs-wabbit.vercel.app/"
+
 module.exports = {
+  swcMinify: true,
   images: { domains: ["play.tailwindcss.com"] },
   future: { strictPostcssConfiguration: true },
+  experimental: {
+    concurrentFeatures: true,
+    serverComponents: true,
+  },
   async headers() {
     return [
       {
@@ -11,7 +17,6 @@ module.exports = {
     ]
   },
   env: { DOMAIN_URL: process.env.NODE_ENV === "production" ? siteUrl : "http://localhost:3000" },
-  webpack5: true,
   poweredByHeader: false,
   reactStrictMode: true,
   webpack: (config, { dev, isServer }) => {
