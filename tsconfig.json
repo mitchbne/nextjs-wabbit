@@ -1,38 +1,24 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "esnext"],
-    "importHelpers": true,
-    "declaration": true,
-    "sourceMap": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "downlevelIteration": true,
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "target": "es5",
-    "noEmit": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
-    "jsxFactory": "React.createElement",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
     "paths": {
-      // "~/context/*": ["context/*"],
-      // "~/layouts/*": ["layouts/*"],
-      // "~/utils/*": ["utils/*"],
-      // "~/lib/*": ["lib/*"],
-      // "~/components/*": ["components/*"],
-      "~/css/*": ["css/*"]
-    }
+      "@/styles/*": ["styles/*"]
+    },
+    "incremental": true
   },
-  "include": ["src", "pages"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

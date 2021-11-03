@@ -8,17 +8,18 @@
 # testing
 /coverage
 
-.eslintcache
-
 # next.js
-.next/
+/.next/
 /out/
 
 # production
+sitemap.xml
 /build
 
 # misc
 .DS_Store
+.eslintcache
+*.pem
 
 # debug
 npm-debug.log*
@@ -34,5 +35,8 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# vercel
 .vercel
-public/sitemap.xml
+
+# typescript
+*.tsbuildinfo

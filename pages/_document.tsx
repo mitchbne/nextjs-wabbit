@@ -10,8 +10,10 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
-        <body>
+        <Head>
+          <link as="font" crossOrigin="anonymous" href="/fonts/inter-var-latin.woff2" rel="preload" type="font/woff2" />
+        </Head>
+        <body className="min-h-screen w-full">
           <Main />
           <NextScript />
         </body>

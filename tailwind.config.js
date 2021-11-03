@@ -7,26 +7,30 @@ module.exports = {
     mode: "all",
     content: [
       "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-      // "./components/**/*.{js,ts,jsx,tsx,mdx}",
-      // "./layouts/**/*.{js,ts,jsx,tsx,mdx}",
+      "./components/**/*.{js,ts,jsx,tsx,mdx}",
+      "./layouts/**/*.{js,ts,jsx,tsx,mdx}",
     ],
   },
-  darkMode: "media",
+  darkMode: "class",
   future: "all",
   theme: {
     colors: {
       ...colors,
       transparent: "transparent",
       gray: colors.blueGray,
+      current: "currentColor",
     },
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
-      screens: { print: { raw: "print" } }, // use utilities like print:text-black
       container: { center: true },
     },
   },
-  variants: { extend: {} },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography"), require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp"),
+  ],
 }
