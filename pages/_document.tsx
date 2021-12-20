@@ -13,7 +13,7 @@ class MyDocument extends Document {
         <Head>
           <link as="font" crossOrigin="anonymous" href="/fonts/inter-var-latin.woff2" rel="preload" type="font/woff2" />
         </Head>
-        <body className="min-h-screen w-full">
+        <body className="text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-100">
           <Main />
           <NextScript />
         </body>

@@ -3,21 +3,18 @@ const colors = require("tailwindcss/colors")
 
 module.exports = {
   mode: "jit",
-  purge: {
-    mode: "all",
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-      "./components/**/*.{js,ts,jsx,tsx,mdx}",
-      "./layouts/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
-  },
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./layouts/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   darkMode: "class",
   future: "all",
   theme: {
     colors: {
       ...colors,
       transparent: "transparent",
-      gray: colors.blueGray,
+      gray: colors.gray,
       current: "currentColor",
     },
     extend: {
